@@ -1,0 +1,206 @@
+.myButton {
+  position: relative;
+  display: inline-block;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5),
+    inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+  background-color: #3ca0c8;
+}
+
+.myButton:hover {
+  background-color: #57b3da;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5),
+    inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+  transition: background-color 0.3s ease-in-out;
+}
+
+html {
+  scroll-padding-top: 60px; 
+}
+
+#contact {
+  scroll-margin-top: -10px;
+}
+
+/* 1)Navbar */
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: rgb(120, 120, 120) !important;
+  border-radius: 8px;
+  transition: smooth 0.4s;
+}
+/* 2)Top */
+
+#topSectionLightText {
+  font-weight: 300;
+}
+
+#topSectionButton {
+  padding: 1em 2.35em 1em 2.35em;
+  font-size: 1.1em;
+  max-width: 28em;
+}
+#top {
+  background-color: #ffffff;
+}
+
+/* 3)Work */
+
+#workButton {
+  padding: 1em 1.5em 1em 1.5em;
+  font-size: 1.1em;
+}
+
+.homeLightText {
+  color: #888888;
+}
+
+#work {
+  background-color: #f8f8f8;
+}
+.iconColor {
+  color: #ea8a95;
+}
+
+/* 4) Portfolio */
+
+.portfolio-card-title a {
+  text-decoration: none;
+  color: inherit; 
+  font-size: inherit;
+  transition: color 0.3s ease; 
+}
+
+.portfolio-card-title a:hover {
+  color: skyblue; 
+}
+
+/* 5) Contact */
+#contact {
+  background-color: #2f2f2f;
+  color: white;
+}
+
+#contact .container header p {
+  font-weight: 100 !important ;
+}
+
+#contact form input,
+#contact form textarea {
+  background-color: #282828;
+  color: #fff;
+  border: none;
+  padding: 0.75em;
+}
+
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: #bbb; 
+  opacity: 0.2; 
+}
+
+#contactHeading {
+  font-weight: 600;
+}
+#contactParagraph {
+  color: #999999;
+  font-size: larger;
+}
+
+form textarea {
+  height: 15em;
+}
+
+.contactFormButtons {
+  padding: 1em 2.35em 1em 2.35em;
+  font-size: 1.1em;
+  max-width: 28em;
+}
+
+#clearFormButton {
+  background-color: #444444 !important;
+  transition: filter 0.3s ease-in-out;
+}
+
+#clearFormButton:hover {
+  filter: brightness(1.3);
+}
+.footerListItems {
+  color: #cccccc;
+  opacity: 0.3;
+}
+
+footer a {
+  color: inherit;
+}
+
+.social-box {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #414141;
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s, color 0.2s;
+}
+
+.social-box:hover {
+  transform: translateY(-5px);
+  color: #fff;
+}
+
+#twitterIcon:hover {
+  background-color: #1da1f2; 
+  color: white;
+}
+
+#facebookIcon:hover {
+  background-color: #1877f2; 
+  color: white;
+}
+
+#dribbbleIcon:hover {
+  background-color: #ea4c89; 
+  color: white;
+}
+
+#linkedinIcon:hover {
+  background-color: #0a66c2; 
+  color: white;
+}
+
+#tumblrIcon:hover {
+  background-color: #35465c; 
+  color: white;
+}
+
+#googlePlusIcon:hover {
+  background-color: #db4437; 
+  color: white;
+}
+
+#githubIcon:hover {
+  background-color: whitesmoke; 
+  color: white;
+}
+
+.horizantalRuler {
+  width: 65%;
+  margin: 2em auto;
+  border: none; 
+  height: 2px; 
+  background-color: #181818; 
+}
