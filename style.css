@@ -1,7 +1,14 @@
-.myButton {
+:root {
+  --custom-color: #888888;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.my-button {
   position: relative;
   display: inline-block;
-  color: #fff !important;
   text-decoration: none;
   font-weight: 700;
   border: 0;
@@ -15,7 +22,7 @@
   background-color: #3ca0c8;
 }
 
-.myButton:hover {
+.my-button:hover {
   background-color: #57b3da;
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5),
     inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
@@ -23,7 +30,7 @@
 }
 
 html {
-  scroll-padding-top: 60px; 
+  scroll-padding-top: 60px;
 }
 
 #contact {
@@ -42,11 +49,11 @@ html {
 }
 /* 2)Top */
 
-#topSectionLightText {
+#top-section-light-text {
   font-weight: 300;
 }
 
-#topSectionButton {
+#top-section-button {
   padding: 1em 2.35em 1em 2.35em;
   font-size: 1.1em;
   max-width: 28em;
@@ -55,21 +62,43 @@ html {
   background-color: #ffffff;
 }
 
+.custom-text {
+  color: var(--custom-color);
+  margin-top: 2em;
+}
+
+.custom-text strong {
+  color: #3e3e3e;
+}
+
+.custom-text a {
+  color: var(--custom-color);
+}
+
+.top-anchors-hover-color:hover{
+  color: #3ca0c8;
+}
+
 /* 3)Work */
 
-#workButton {
+.card-height-width {
+  width: 18rem;
+  height: 20rem;
+}
+
+#work-button {
   padding: 1em 1.5em 1em 1.5em;
   font-size: 1.1em;
 }
 
-.homeLightText {
-  color: #888888;
+.home-light-text {
+  color: var(--custom-color);
 }
 
 #work {
   background-color: #f8f8f8;
 }
-.iconColor {
+.icon-color {
   color: #ea8a95;
 }
 
@@ -77,13 +106,13 @@ html {
 
 .portfolio-card-title a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
   font-size: inherit;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
 
 .portfolio-card-title a:hover {
-  color: skyblue; 
+  color: skyblue;
 }
 
 /* 5) Contact */
@@ -104,17 +133,16 @@ html {
   padding: 0.75em;
 }
 
-
 #contact form input::placeholder,
 #contact form textarea::placeholder {
-  color: #bbb; 
-  opacity: 0.2; 
+  color: #bbb;
+  opacity: 0.2;
 }
 
-#contactHeading {
+#contact-heading {
   font-weight: 600;
 }
-#contactParagraph {
+#contact-paragraph {
   color: #999999;
   font-size: larger;
 }
@@ -123,27 +151,29 @@ form textarea {
   height: 15em;
 }
 
-.contactFormButtons {
+.contact-form-buttons {
   padding: 1em 2.35em 1em 2.35em;
   font-size: 1.1em;
   max-width: 28em;
 }
-
-#clearFormButton {
+#clear-form-button {
   background-color: #444444 !important;
   transition: filter 0.3s ease-in-out;
 }
 
-#clearFormButton:hover {
+#clear-form-button:hover {
   filter: brightness(1.3);
 }
-.footerListItems {
-  color: #cccccc;
-  opacity: 0.3;
+.footer-list-item {
+ color: rgba(204, 204, 204, 0.3);
 }
 
 footer a {
   color: inherit;
+}
+
+.footer-anchors-hover-color:hover{
+  color: rgb(0, 120, 139);
 }
 
 .social-box {
@@ -159,48 +189,80 @@ footer a {
 
 .social-box:hover {
   transform: translateY(-5px);
-  color: #fff;
 }
 
-#twitterIcon:hover {
-  background-color: #1da1f2; 
-  color: white;
+#twitter-icon:hover {
+  background-color: #1da1f2;
 }
 
-#facebookIcon:hover {
-  background-color: #1877f2; 
-  color: white;
+#facebook-icon:hover {
+  background-color: #1877f2;
 }
 
-#dribbbleIcon:hover {
-  background-color: #ea4c89; 
-  color: white;
+#dribbble-icon:hover {
+  background-color: #ea4c89;
 }
 
-#linkedinIcon:hover {
-  background-color: #0a66c2; 
-  color: white;
+#linkedin-icon:hover {
+  background-color: #0a66c2;
 }
 
-#tumblrIcon:hover {
-  background-color: #35465c; 
-  color: white;
+#tumblr-icon:hover {
+  background-color: #35465c;
 }
 
-#googlePlusIcon:hover {
-  background-color: #db4437; 
-  color: white;
+#googlePlus-icon:hover {
+  background-color: #db4437;
 }
 
-#githubIcon:hover {
-  background-color: whitesmoke; 
-  color: white;
+#github-icon:hover {
+  background-color: whitesmoke;
 }
 
-.horizantalRuler {
+.horizantal-ruler {
   width: 65%;
   margin: 2em auto;
-  border: none; 
-  height: 2px; 
-  background-color: #181818; 
+  border: none;
+  height: 2px;
+  background-color: #181818;
 }
+
+/* Media queries  */
+/* 1)Applying platform-specific background colors for all social icons on mobile screens */
+@media (max-width: 426px) {
+  #twitter-icon {
+    background-color: #1da1f2;
+  }
+
+  #facebook-icon {
+    background-color: #1877f2;
+  }
+
+  #dribbble-icon {
+    background-color: #ea4c89;
+  }
+
+  #linkedin-icon {
+    background-color: #0a66c2;
+  }
+
+  #tumblr-icon {
+    background-color: #35465c;
+  }
+
+  #googlePlus-icon {
+    background-color: #db4437;
+  }
+
+  #github-icon {
+    background-color: whitesmoke;
+  }
+}
+
+/* 2) Making contact buttons responsive on small screens */
+@media (max-width: 576px) {
+  .contact-form-buttons {
+    width: 100%; /* take full width on small screens */
+    max-width: none; /* remove the restriction */
+  }}
+
